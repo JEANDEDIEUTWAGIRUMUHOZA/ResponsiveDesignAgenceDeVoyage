@@ -1,0 +1,206 @@
+*{
+	margin: 0px;
+	padding: 0px;
+
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 62.5%;
+}
+
+body{
+	padding: 20px 40px;
+
+	font-family: "Open Sans", arial;
+	font-size: 1.6rem; 
+}
+
+.texte-vert{
+	color: teal;
+}
+
+.center{
+	text-align: center;
+}
+
+h1, h2{
+	font-family: "Indie Flower";
+	text-transform: uppercase;
+
+	line-height: 1.8em;
+
+	color: rgb(10,110,180);
+	border-bottom: 1px solid rgb(5,90,185);
+}
+
+h1{
+	font-size: 5rem;
+	text-align: center;
+}
+
+h2{
+	font-size: 2.4rem;
+}
+
+img{
+	width: 50%;
+	height: auto;
+
+	display: block;
+	margin: 0 auto;
+}
+
+section img, aside img{
+	width: 100%;
+	height: auto;
+}
+
+nav{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+
+	margin: 10px 0;
+
+	background-color: #015ABB;
+}
+
+nav span, aside article p{
+	display: none;
+}
+
+nav a{
+	padding: 50px 30px;
+
+	text-decoration: none;
+	color: white;
+}
+
+nav a:hover{
+	background-color: rgba(255,255,255,0.2);
+}
+
+nav i{
+	font-size: 2.6rem;
+}
+
+section article{
+	margin: 50px 0;
+}
+
+section article img{
+	margin-bottom: 100px;
+}
+
+
+article p, aside article span{
+	margin: 20px 0;
+	text-align: justify;
+	line-height: 2em;
+	color: grey;
+}
+
+aside{
+	padding: 100px 30px 50px 30px;
+	background-color: #B6DDAD;
+}
+
+aside h2{
+	margin-top: 20px;
+}
+
+aside article h2{
+	font-weight: normal;
+}
+
+footer{
+	margin: 100px auto 0;
+}
+
+footer img{
+	width: 15%;
+	margin-bottom: 20px;
+}
+
+footer p{
+	padding: 0 20px;
+	text-align: center;
+	color: grey;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+
+@media screen and (min-width: 575px){
+
+	nav span{
+		display: inline;
+
+		margin-left: 20px;
+	}
+
+	aside article p{
+		display: inline-block;
+		color: #314C35;
+	}
+
+	nav{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	nav i, nav span{
+		font-size: 30px;
+	}
+
+	section article .center{
+		text-align: left;
+	}
+}
+
+@media screen and (min-width: 980px){
+
+	.logo{
+		width: 20%;
+	}
+	nav {
+		flex-direction: row;
+		justify-content: space-around;
+
+		margin: 0;
+	}
+	nav a{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main{
+		display: flex;
+
+	}
+
+	section{
+		width: 70%;
+		margin-right: 20px;
+	}
+
+	aside{
+		width: 30%;
+	}
+
+	aside {
+		padding: 20px 30px;
+	}
+
+	footer{
+		margin-top: 30px;
+	}
+
+	footer img{
+		 width: 5%;
+	}
+}
